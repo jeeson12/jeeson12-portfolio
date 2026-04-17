@@ -6,39 +6,52 @@ export default function AboutMe() {
       </h2>
 
       <div className="max-w-4xl w-full flex flex-col md:flex-row gap-6 md:gap-8 text-zinc-300 relative z-10">
-        <div className="flex-1 text-sm md:text-base leading-relaxed space-y-3 md:space-y-4">
+        <div className="flex-1 text-sm md:text-base leading-relaxed space-y-4 text-white/90">
           <p>
-            I am an aspiring engineer currently pursuing a B.Tech majoring in
-            Computer Science at Mar Baselios Christian College of Engineering in
-            Peermade, Kerala.
+            I am a <span className="text-white font-bold">Software Developer</span> with professional experience, currently working at <span className="text-white font-bold">ItProfound Bangalore</span>. I graduated with a B.Tech in Computer Science from Mar Baselios Christian College of Engineering and Technology, Peermade, Kerala.
           </p>
           <p>
-            I'm very much interested in coding and love to learn about new
-            technical stuff. I have acquired skills in languages like C, Java,
-            Python, HTML, CSS, and SQL. As an engineering student, I believe in
-            the power of hands-on experiences and practical application of
-            knowledge.
+            I specialize in frontend development using <span className="text-white font-bold">React, TypeScript, and Tailwind CSS</span>, along with backend integration using <span className="text-white font-bold">Firebase</span>. My work focuses on writing clean, maintainable code and delivering smooth user experiences.
           </p>
           <p>
-            I am actively seeking opportunities to gain practical exposure,
-            whether through internships or research projects. I am eagerly
-            trying to expand and develop my skills and very much excited about
-            the future.
+            In my current role, I contribute to feature development, improve application performance, and collaborate on building scalable solutions.
           </p>
+          
+          <div className="mt-6 pt-6 border-t border-white/20">
+            <h3 className="text-xl font-bold text-white mb-4">What I bring:</h3>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm font-medium">
+              <li className="flex items-center gap-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-white"></div>
+                Clean and maintainable code
+              </li>
+              <li className="flex items-center gap-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-white"></div>
+                Strong frontend fundamentals
+              </li>
+              <li className="flex items-center gap-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-white"></div>
+                Real-world project experience
+              </li>
+              <li className="flex items-center gap-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-white"></div>
+                Fast learner with execution focus
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div className="md:w-80 space-y-4 bg-white/5 p-6 rounded-2xl border border-white/10 backdrop-blur-sm h-fit">
+        <div className="md:w-80 space-y-4 bg-white/10 p-6 rounded-2xl border border-white/20 backdrop-blur-md h-fit shadow-lg">
           <div className="space-y-1">
-            <span className="text-xs md:text-sm text-zinc-500 uppercase tracking-widest font-semibold">
+            <span className="text-xs md:text-sm text-white/60 uppercase tracking-widest font-bold">
               Name
             </span>
-            <div className="text-sm md:text-base text-white">Jeeson Jacob Varghese</div>
+            <div className="text-sm md:text-base text-white font-bold">Jeeson Jacob Varghese</div>
           </div>
           <div className="space-y-1">
-            <span className="text-xs md:text-sm text-zinc-500 uppercase tracking-widest font-semibold">
+            <span className="text-xs md:text-sm text-white/60 uppercase tracking-widest font-bold">
               Email
             </span>
-            <div className="text-sm md:text-base text-white">jeeson0987@gmail.com</div>
+            <div className="text-sm md:text-base text-white font-bold">jeeson0987@gmail.com</div>
           </div>
           {/* <div className="space-y-1">
             <span className="text-xs md:text-sm text-zinc-500 uppercase tracking-widest font-semibold">
@@ -49,10 +62,10 @@ export default function AboutMe() {
             </div>
           </div> */}
           <div className="space-y-1">
-            <span className="text-xs md:text-sm text-zinc-500 uppercase tracking-widest font-semibold">
-              Birthday
+            <span className="text-xs md:text-sm text-white/60 uppercase tracking-widest font-bold">
+              Graduation
             </span>
-            <div className="text-sm md:text-base text-white">18 March 2003</div>
+            <div className="text-sm md:text-base text-white font-bold">B.Tech (CSE), 2025</div>
           </div>
         </div>
       </div>

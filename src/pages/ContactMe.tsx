@@ -13,7 +13,7 @@ export default function ContactMe() {
         <div className="flex-1 flex flex-col justify-center space-y-6 bg-white/5 p-6 md:p-8 rounded-2xl border border-white/10 backdrop-blur-sm">
           <div>
             <h3 className="text-xl md:text-2xl font-bold text-white mb-2">Connect</h3>
-            <p className="text-sm md:text-base text-zinc-400 max-w-sm">Feel free to reach out for collaborations, opportunities, or just to say hi!</p>
+            <p className="text-sm md:text-base text-white font-medium max-w-sm">I’m open to new opportunities, collaborations, and interesting projects. Feel free to reach out.</p>
           </div>
           
           <div className="flex flex-row md:flex-col flex-wrap gap-4">
@@ -53,35 +53,35 @@ export default function ContactMe() {
         </div>
 
         {/* Contact Form placeholder section */}
-        <div className="flex-[1.5] bg-white/5 p-6 md:p-8 rounded-2xl border border-white/10 backdrop-blur-sm">
+        <div className="flex-[1.5] bg-white/10 p-6 md:p-8 rounded-2xl border border-white/20 backdrop-blur-md shadow-xl">
           <form className="space-y-4 md:space-y-6" onSubmit={(e) => e.preventDefault()}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
               <div>
-                <label className="block text-xs md:text-sm font-medium text-zinc-400 mb-1.5 md:mb-2">Name</label>
+                <label className="block text-xs md:text-sm font-bold text-white/80 mb-1.5 md:mb-2 uppercase tracking-wide">Name</label>
                 <input 
                   type="text" 
-                  className="w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2 md:px-4 md:py-3 text-sm md:text-base text-white placeholder-zinc-500 focus:outline-none focus:border-white/30 transition-colors"
+                  className="w-full bg-white/5 border border-white/20 rounded-lg px-3 py-2 md:px-4 md:py-3 text-sm md:text-base text-white font-medium placeholder-white/30 focus:outline-none focus:border-white/50 transition-colors"
                   placeholder="John Doe"
                 />
               </div>
               <div>
-                <label className="block text-xs md:text-sm font-medium text-zinc-400 mb-1.5 md:mb-2">Email</label>
+                <label className="block text-xs md:text-sm font-bold text-white/80 mb-1.5 md:mb-2 uppercase tracking-wide">Email</label>
                 <input 
                   type="email" 
-                  className="w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2 md:px-4 md:py-3 text-sm md:text-base text-white placeholder-zinc-500 focus:outline-none focus:border-white/30 transition-colors"
+                  className="w-full bg-white/5 border border-white/20 rounded-lg px-3 py-2 md:px-4 md:py-3 text-sm md:text-base text-white font-medium placeholder-white/30 focus:outline-none focus:border-white/50 transition-colors"
                   placeholder="john@example.com"
                 />
               </div>
             </div>
             <div>
-              <label className="block text-xs md:text-sm font-medium text-zinc-400 mb-1.5 md:mb-2">Message</label>
+              <label className="block text-xs md:text-sm font-bold text-white/80 mb-1.5 md:mb-2 uppercase tracking-wide">Message</label>
               <textarea 
                 rows={3}
-                className="w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2 md:px-4 md:py-3 text-sm md:text-base text-white placeholder-zinc-500 focus:outline-none focus:border-white/30 transition-colors resize-none"
+                className="w-full bg-white/5 border border-white/20 rounded-lg px-3 py-2 md:px-4 md:py-3 text-sm md:text-base text-white font-medium placeholder-white/30 focus:outline-none focus:border-white/50 transition-colors resize-none"
                 placeholder="How can I help you?"
               />
             </div>
-            <button className="w-full md:w-auto px-6 py-3 md:px-8 md:py-4 bg-white text-black font-bold rounded-lg hover:bg-zinc-200 transition-colors shadow-lg text-sm md:text-base">
+            <button className="w-full md:w-auto px-6 py-3 md:px-8 md:py-4 bg-white text-black font-bold rounded-lg hover:bg-zinc-200 transition-all transform hover:scale-105 shadow-xl text-sm md:text-base">
               Send Message
             </button>
           </form>
